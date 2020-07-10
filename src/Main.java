@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 
 public class Main {
 
@@ -8,15 +8,21 @@ public class Main {
         String choiceTwo = "Blue";
         String choiceThree = "Green";
 
-        String correctAnswer = choiceTwo;
+        String correctAnswer;
+        correctAnswer = choiceTwo;
 
         // Write a print statement asking the question
         System.out.println(question);
-        System.out.println("Possible Answers are " + choiceOne + "or " + choiceTwo " or " + choiceThree ". What's your guess?");
-
         // Write a print statement giving the answer choices
-
+        System.out.println("Possible Answers are " + choiceOne + "or " + choiceTwo + " or " + choiceThree + ". What's your guess?");
         // Have the user input an answer
+        String guess;
+        guess = input.next();
+        while (!guess.equals(correctAnswer)) {
+            System.out.println("Sorry, possible Answers are " + choiceOne + "or " + choiceTwo + " or " + choiceThree + ". What's your guess?");
+            guess = input.next();
+        }
+        System.out.println("You got it.");
         // Retrieve the user's input
 
         // If the user's input matches the correctAnswer...
