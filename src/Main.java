@@ -1,15 +1,19 @@
 
+
 public class Main {
 
     public static void main(String args[]) {
-        String question = "";
-        String choiceOne = "";
-        String choiceTwo = "";
-        String choiceThree = "";
+        String question = "What color is my shirt?";
+        String choiceOne = "Red";
+        String choiceTwo = "Blue";
+        String choiceThree = "Green";
 
         String correctAnswer = choiceTwo;
 
         // Write a print statement asking the question
+        System.out.println(question);
+        System.out.println("Possible Answers are " + choiceOne + "or " + choiceTwo " or " + choiceThree ". What's your guess?");
+
         // Write a print statement giving the answer choices
 
         // Have the user input an answer
